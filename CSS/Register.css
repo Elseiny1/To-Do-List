@@ -1,0 +1,104 @@
+myStyle{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FF6767;
+    background-image: url(../images/Background\ Pattern.png);
+}
+.container{
+    display: flex;
+    width: 85%;
+    max-width: 1236px;
+    min-width: 250px;
+    height: 75%;
+    margin: auto;
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+img{
+    margin: 10% 15% 0 0;
+}
+.form{
+    width: 45%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    width: 85%;
+    height: 60px;
+    margin-top: 22px;
+    border: #565454 solid 1px;
+    border-radius: 10px;
+}
+::-webkit-input-placeholder{
+    background-repeat: no-repeat;
+    background-position: 0 -5px;
+    height: 1.7rem;
+    padding-left: 3em;
+    
+}
+#firstName::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/FName-Icon.png);
+}
+#lastName::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/LName-Icon.png);
+}
+#username::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/Username-Icon.png);
+}
+#email::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/Email-Icon.png);
+}
+#password::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/Password-Icon.png);
+}
+#confirmPass::-webkit-input-placeholder{
+    background-image: url(../images/RegisterIcons/ConfirmPass-Icon.png);
+}
+input[type="checkbox"]{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+    margin: 10px 10px 0 0 ;
+    align-items: center;
+}
+label{
+    font-size: small;
+    display: inline-flex;
+    align-items: baseline;
+    overflow: hidden;
+    flex-flow: nowrap;
+    margin: 10px 0 0 0 ;
+}
+input[type="submit"]{
+    width: 129px;
+    background-color: #FF6767;
+    color: #ffff;
+    border: none;
+    margin: 10px 0;
+}
+h3{
+    size: 36px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+span{
+    margin-top: 0;
+    font-size: small;
+    flex-flow: nowrap;
+}
