@@ -20,6 +20,7 @@ body{
     max-width: 1236px;
     min-width: 250px;
     height: 75%;
+    padding-bottom: 3vh;
     margin: auto;
     background-color: #ffff;
     border-radius: 10px;
@@ -27,17 +28,21 @@ body{
 }
 img{
     margin: 10% 15% 0 0;
+
+    transition-property: display;
+        transition-duration: 1s;
+         transition-timing-function: linear;
 }
 .form{
     width: 45%;
-    min-width: 250px;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
     font-size: 16px;
     font-weight: 500;
 }
 input{
-    display: block;
+    display: flex;
     width: 85%;
     height: 60px;
     margin-top: 22px;
@@ -46,8 +51,9 @@ input{
 }
 ::-webkit-input-placeholder{
     background-repeat: no-repeat;
-    background-position: 0 -5px;
-    height: 1.7rem;
+    background-size: 20px;
+    background-position: 5px 0px;
+    height: 100%;
     padding-left: 3em;
     
 }
@@ -72,8 +78,7 @@ input{
 input[type="checkbox"]{
     width: auto;
     height: auto;
-    margin-right: 20px;
-    margin: 10px 10px 0 0 ;
+    margin: 10px 20px 0 0 ;
     align-items: center;
 }
 label{
@@ -90,6 +95,14 @@ input[type="submit"]{
     color: #ffff;
     border: none;
     margin: 10px 0;
+    cursor: pointer;
+
+    transition-property: background;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+input[type="submit"]:hover{
+    background-color: aqua;
 }
 h3{
     size: 36px;
@@ -101,4 +114,15 @@ span{
     margin-top: 0;
     font-size: small;
     flex-flow: nowrap;
+}
+@media (max-width: 950px){
+    img{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+    }
+    input{
+        width: 100%;
+    }
 }
